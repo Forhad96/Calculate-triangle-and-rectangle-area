@@ -98,7 +98,7 @@
                 <span class="ml-2">cm</span>
               </p>
               <p class="text-2xl">
-                Area: <span id="triangle_area"></span>0
+                Area: <span id="triangle_area">0</span>
                 <span>cm<sup>2</sup></span>
               </p>
               <div class="card-actions">
@@ -114,7 +114,7 @@
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img
-                src="./images//rectangle.png"
+                src="./images/rectangle.png"
                 alt="triangle"
                 class="rounded-xl" />
             </figure>
@@ -136,12 +136,50 @@
                 <span class="ml-2">cm</span>
               </p>
               <p class="text-2xl">
-                Area: <span id="rectangle_area"></span>0
+                Area: <span id="rectangle_area">0</span>
                 <span>cm</span>
               </p>
               <div class="card-actions">
                 <button
                   onclick="rectangleAreaCalculate()"
+                  class="btn btn-info text-white w-full">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- parallelogram card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/parallelogram.png"
+                alt="triangle"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body text-center space-y-2">
+              <h2 class="text-2xl">Parallelogram</h2>
+              <p>Area (A) = b x h</p>
+              <p>
+                <input
+                  id="parallelogram_base"
+                  type="text"
+                  placeholder="base"
+                  class="border bg-gray-200 text-xl w-24 px-4" />
+                <span class="ml-2">cm</span>
+                <input
+                  id="parallelogram_height"
+                  type="text"
+                  placeholder="height"
+                  class="border bg-gray-200 text-xl w-24 px-4 ml-2" />
+                <span class="ml-2">cm</span>
+              </p>
+              <p class="text-2xl">
+                Area: <span id="parallelogram_area">0</span>
+                <span>cm</span>
+              </p>
+              <div class="card-actions">
+                <button
+                  onclick="parallelogramAreaCalculate()"
                   class="btn btn-info text-white w-full">
                   Calculate
                 </button>
